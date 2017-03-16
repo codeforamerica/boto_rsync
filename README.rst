@@ -1,5 +1,5 @@
 ================================================================================
-boto rsync v0.8.1
+boto rsync3 v0.8.1
 ================================================================================
 
 | Copyright: (c) 2012 Seth Davis
@@ -19,29 +19,12 @@ options). If the file exists on the destination but its size differs from
 the source, then it will be overwritten (unless the -w option is used).
 
 
-Installation
-================================================================================
-
-To install, simply::
-
-    pip install boto_rsync
-
-* You'll need to have `Python`_ 2.5+ and `pip`_ installed.
-* You might have to be root (or use sudo) for pip to install the script into a
-  globally executable directory in your $PATH.
-* pip should automatically install boto for you, but the advanced user can find
-  it here: http://github.com/boto/boto/
-
-.. _Python: http://www.python.org
-.. _pip: http://www.pip-installer.org
-
-
 Usage
 ================================================================================
 
 ::
 
-    boto-rsync [OPTIONS] SOURCE DESTINATION
+    boto-rsync3 [OPTIONS] SOURCE DESTINATION
 
 SOURCE and DESTINATION can be:
 
@@ -57,15 +40,15 @@ Examples
 
 ::
 
-    boto-rsync [OPTIONS] /local/path/ s3://bucketname/remote/path/
+    boto-rsync3 [OPTIONS] /local/path/ s3://bucketname/remote/path/
 
 or::
 
-    boto-rsync [OPTIONS] gs://bucketname/remote/path/or/key /local/path/
+    boto-rsync3 [OPTIONS] gs://bucketname/remote/path/or/key /local/path/
 
 or::
 
-    boto-rsync [OPTIONS] s3://bucketname/ s3://another_bucket/
+    boto-rsync3 [OPTIONS] s3://bucketname/ s3://another_bucket/
 
 
 Options

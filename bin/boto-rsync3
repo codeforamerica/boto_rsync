@@ -458,7 +458,7 @@ def main():
                         continue
                     
                     keys[key.name] = key.size
-            except Exception, e:
+            except Exception as e:
                 raise e
             finally:
                 # End "spinner" thread
@@ -1010,7 +1010,7 @@ def main():
                         key.copy(cloud_dest_bucket, fullpath,
                                  metadata=metadata, reduced_redundancy=reduced,
                                  preserve_acl=preserve, encrypt_key=encrypt)
-                    except Exception, e:
+                    except Exception as e:
                         raise e
                     finally:
                         # End "spinner" thread
@@ -1107,7 +1107,7 @@ def main():
                         key.copy(cloud_dest_bucket, fullpath,
                                  metadata=metadata, reduced_redundancy=reduced,
                                  preserve_acl=preserve, encrypt_key=encrypt)
-                    except Exception, e:
+                    except Exception as e:
                         raise e
                     finally:
                         # End "spinner" thread
